@@ -148,11 +148,11 @@ DEFINE function normalize_record(record: dict) -> tuple[dict | None, str]:
             set norm_record["queen_seen"] to boolean returned by convert_bool
                 
 
-        #7 Normalize notes by converting any missing notes to an ampty string.
-            if notes = None:
-                norm_record["notes"] = ""
-            else:
-                norm_record["notes"] = record.get("notes")
+    #7 Normalize notes by converting any missing notes to an ampty string.
+        if notes = None:
+            norm_record["notes"] = ""
+        else:
+            norm_record["notes"] = record.get("notes")
 
     RETURN (norm_record, "")
 
