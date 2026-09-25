@@ -1,6 +1,6 @@
 # QUESTION 1: Data Contract and Pseudocode for Data Cleaner
 
-Establish RAW_INSPECTIONS dictionary with values from assignment.
+Establish RAW_INSPECTIONS list of records with values from assignment.
 
 ## Helper functions:
 
