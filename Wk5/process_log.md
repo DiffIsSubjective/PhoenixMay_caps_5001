@@ -5,14 +5,13 @@ Establish RAW_INSPECTIONS dictionary with values from assignment.
 ## Helper functions:
 
 DEFINE valid_hive_id(value):
-    """
-    This will check if the hive_id is in the proper format.
+    **This will check if the hive_id is in the proper format.**
 
     ARGUMENTS:
     value: can be any type, but this will return FALSE if it's not a string. This is the hive_id we're checking.
 
-    RETURNS: TRUE if hive_id is valid, FALSE if it's not.
-    """
+    RETURNS: normalized hive_id if hive_id is valid, FALSE if it's not.
+    
         if value is not a string:
             return FALSE
         hive_id = value stripped of whitespace and converted to UPPERCASE
@@ -28,15 +27,14 @@ DEFINE valid_hive_id(value):
 ===== End of valid_hive_id function =====
 
 DEFINE parse_date(value):
-    """
-    Returns a datetime.date or None if the date is invalid.
+    **Returns a datetime.date or None if the date is invalid.**
 
     ARGUMENTS:
     value: can be any type, but will return NONE if it's not a datetime.date or a string.
 
     RETURNS:
     value converted to a datetime.date, or NONE if conversion fails.
-    """
+    
         if value is already a datetime.date:
             RETURN value
         if value is not a string:
@@ -50,15 +48,14 @@ DEFINE parse_date(value):
 ===== End of parse_date function ======
 
 DEFINE convert_bool(value):
-    """
-    Converts yes/no queen_seen strings to booleans.
+    **Converts yes/no queen_seen strings to booleans.**
     
     ARGUMENTS:
     value: can be any type, but the function will return None if it's not a string or boolean.
 
     RETURNS:
     value converted into a boolean, or None if conversion fails.
-    """
+    
         if already boolean:
             RETURN value
         else:
@@ -76,8 +73,7 @@ DEFINE convert_bool(value):
 ## Main function:
 
 DEFINE function normalize_record(record: dict) -> tuple[dict | None, str]:
-    """
-    This function will take a record and normalize it.
+    **This function will take a record and normalize it.**
 
     ARGUMENTS:
     record: Must be DICTIONARY. It's the entry from the RAW_INSPECTIONS list of dictionaries that will be normalized.
@@ -85,7 +81,7 @@ DEFINE function normalize_record(record: dict) -> tuple[dict | None, str]:
     RETURNS:
     A TUPLE with two values. The first will be either a DICTIONARY containing the cleaned record or it will be empty (None) if
     the record was rejected. The second value will be a STRING that explains why the record was rejected if it was, or a blank string.
-    """
+    
 
     norm_record = {}   #This sets up a blank dictionary for the final normalized record.
 
