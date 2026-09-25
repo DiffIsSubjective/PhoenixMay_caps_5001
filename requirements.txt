@@ -1,0 +1,5 @@
+pandas>=2.2,<2.3
+numpy>=1.26.4,<2.0
+ipykernel>=6.29,<7
+pylint>=3,<4
+nbqa>=0.13,<0.14

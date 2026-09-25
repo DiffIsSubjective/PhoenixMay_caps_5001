@@ -1,0 +1,12 @@
+[MAIN]
+ignore=.git,.my_venv
+ignore-patterns=^\.ipynb_checkpoints$
+
+[MESSAGES CONTROL]
+disable=
+
+[FORMAT]
+max-line-length=100
+
+[DESIGN]
+max-args=10
