@@ -19,7 +19,7 @@ high_temp_threshold = 95
 temp_risk_pts = 1
 
 
-FUNCTION calculate_risk(self, previous_weight: float or None) -> Tuple [Int, List[str]]:
+DEF FUNCTION calculate_risk(self, previous_weight: float or None) -> Tuple [Int, List[str]]:
     """
     Calculates and stores the risk score for this inspection.
 
@@ -69,7 +69,7 @@ FUNCTION calculate_risk(self, previous_weight: float or None) -> Tuple [Int, Lis
 The doc string below explains what this function does. Since it's related to the risk calculation,
 I decided to include its pseudocode here as well, largely for practice.
 
-FUNCTION add_risk_fields(records: list[dict]) -> list[dict]:
+DEF FUNCTION add_risk_fields(records: list[dict]) -> list[dict]:
     """
     Add risk_score and risk_reasons to copies of cleaned inspection records.
     Records are sorted chronologically within each hive before risk is
