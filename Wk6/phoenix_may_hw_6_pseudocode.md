@@ -70,20 +70,20 @@ The doc string below explains what this function does. Since it's related to the
 I decided to include its pseudocode here as well, largely for practice.
 
 FUNCTION add_risk_fields(records: list[dict]) -> list[dict]:
-"""
-Add risk_score and risk_reasons to copies of cleaned inspection records.
-Records are sorted chronologically within each hive before risk is
-calculated. The original records are not modified.
-The previous weight is tracked separately for each hive. Only a non-missing
-current weight becomes the previous valid weight for the next inspection.
+    """
+    Add risk_score and risk_reasons to copies of cleaned inspection records.
+    Records are sorted chronologically within each hive before risk is
+    calculated. The original records are not modified.
+    The previous weight is tracked separately for each hive. Only a non-missing
+    current weight becomes the previous valid weight for the next inspection.
 
-ARGUMENTS:
-records: list of dictionaries. These are the cleaned records from clean_records.
+    ARGUMENTS:
+    records: list of dictionaries. These are the cleaned records from clean_records.
 
-RETURNS:
-A new list of dictionaries containing the original fields plus
-risk_score and risk_reasons.
-"""
+    RETURNS:
+    A new list of dictionaries containing the original fields plus
+    risk_score and risk_reasons.
+    """
     Make copies of all records so the clean records are not modified.
 
     Sort the copies by hive_id and inspection_date.
