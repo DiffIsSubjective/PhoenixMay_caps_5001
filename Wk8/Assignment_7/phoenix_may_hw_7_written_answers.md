@@ -18,7 +18,7 @@ We've been summarizing everything by hive until now, but since we have dates, I 
 
 https://stackoverflow.com/questions/25146121/extracting-just-month-and-year-separately-from-pandas-datetime-column
 
-And then I wrote code to display a summary by month and year. The summary includes average temperature, weight, mites, and risk score, as well as the percentage of inspections that need attention. The current data only has inspections in August, but over time, this information could be used to identify trends and give the user better insight as to whether issues are being caused by the time of year or something specific to a hive.
+And then I wrote a function called monthly_summary to display a summary by month and year. The summary includes average temperature, weight, mites, and risk score, as well as the percentage of inspections that need attention. The current data only has inspections in August, but over time, this information could be used to identify trends and give the user better insight as to whether issues are being caused by the time of year or something specific to a hive.
 
 ## Pylint
 
