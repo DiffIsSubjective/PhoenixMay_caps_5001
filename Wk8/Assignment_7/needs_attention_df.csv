@@ -1,0 +1,5 @@
+hive_id,inspection_date,mites,risk_score,risk_reasons
+H-01,2026-08-15,8,5,"['mites at or above 8', 'queen not seen']"
+H-03,2026-08-17,9,6,"['mites at or above 8', 'queen not seen', 'temperature outside 55-95 F']"
+H-06,2026-08-06,12,6,"['mites at or above 8', 'queen not seen', 'temperature outside 55-95 F']"
+H-06,2026-08-20,14,8,"['mites at or above 8', 'queen not seen', 'weight decreased by at least 10 lb', 'temperature outside 55-95 F']"

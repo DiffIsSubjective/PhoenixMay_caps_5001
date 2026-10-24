@@ -1,0 +1,12 @@
+hive_id,inspection_date,temp_f,weight_lb,mites,queen_seen,notes,risk_score,risk_reasons,needs_attention
+H-01,2026-08-01,84.0,142.5,3,True,calm,0,[],False
+H-01,2026-08-15,89.0,137.0,8,False,queen not found,5,"['mites at or above 8', 'queen not seen']",True
+H-02,2026-08-02,85.0,155.2,2,True,,0,[],False
+H-02,2026-08-16,91.0,151.4,5,True,,0,[],False
+H-03,2026-08-03,,130.0,0,True,cool morning,0,[],False
+H-03,2026-08-17,96.0,,9,False,light hive,6,"['mites at or above 8', 'queen not seen', 'temperature outside 55-95 F']",True
+H-04,2026-08-18,81.0,158.5,4,True,calm,0,[],False
+H-05,2026-08-05,72.0,,1,True,scale failed,0,[],False
+H-05,2026-08-19,74.0,144.2,3,True,retest,0,[],False
+H-06,2026-08-06,101.0,120.0,12,False,agitated,6,"['mites at or above 8', 'queen not seen', 'temperature outside 55-95 F']",True
+H-06,2026-08-20,97.0,109.4,14,False,low stores,8,"['mites at or above 8', 'queen not seen', 'weight decreased by at least 10 lb', 'temperature outside 55-95 F']",True
