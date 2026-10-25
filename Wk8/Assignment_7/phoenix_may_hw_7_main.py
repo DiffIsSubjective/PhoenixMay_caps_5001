@@ -957,21 +957,21 @@ def monthly_summary(frame: pd.DataFrame) -> pd.DataFrame:
     """
     monthly = frame.copy()
     # StackOverflow used to learn to use pandas datetime tools to group by months.
-    monthly['month'] = monthly['inspection_date'].dt.to_period("M")
+    monthly["month"] = monthly["inspection_date"].dt.to_period("M")
     monthly = (
-        monthly.groupby('month')
+        monthly.groupby("month")
             # Gen AI used to learn how to use .agg to aggregate multiple columns at once
             # when using groupby.
         .agg(
-            avg_temp=('temp_f', 'mean'),
-            avg_weight=('weight_lb', 'mean'),
-            avg_mites=('mites', 'mean'),
-            avg_risk=('risk_score', 'mean'),
-            attention_rate=('needs_attention', 'mean')
+            avg_temp=("temp_f", "mean"),
+            avg_weight=("weight_lb", "mean"),
+            avg_mites=("mites", "mean"),
+            avg_risk=("risk_score", "mean"),
+            attention_rate=("needs_attention", "mean")
             # The mean of needs_attention indicates the % of records needing attention
         )
     )
-    monthly['attention_rate'] = (monthly['attention_rate'].map(lambda x: f'{x:.2%}'))
+    monthly["attention_rate"] = (monthly["attention_rate"].map(lambda x: f"{x:.2%}"))
 
     return monthly
 

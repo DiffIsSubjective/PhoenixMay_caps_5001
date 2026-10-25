@@ -36,4 +36,4 @@ The code produces three CSV files:
 2. needs_attention_df: shows only cleaned records needing attention and only the columns hive_id, inspection_date, mites, risk_score, and risk_reasons, per the instructions in Question #2.
 3. changes_in_weight: shows changes in weight for Question #3. It only includes the hive_id, inspection_date, weight_lb, and wgt_incr_decr columns since those are the only relevant ones for seeing changes in weight.
 
-Removed a few of the larger pieces of output from the earlier assignments (things that printed entire lists/dictionaries, etc). I didn't remove any functions, just statements that printed all the old output, since the output was getting pretty long and those earlier pieces weren't relevant for this assignment.
+Fixed the temp conversion issue from prior assignments. Removed a few of the larger pieces of output from the earlier assignments (things that printed entire lists/dictionaries, etc). I didn't remove any functions, just statements that printed all the old output, since the output was getting pretty long and those earlier pieces weren't relevant for this assignment.
