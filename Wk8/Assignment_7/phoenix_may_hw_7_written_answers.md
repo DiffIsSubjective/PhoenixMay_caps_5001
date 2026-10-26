@@ -2,9 +2,9 @@
 
 ## Question 1: Does a module make sense here? Why?
 
-I made multiple modules. First, I put the original RAW_INSPECTIONS records into a module called original_records. This makes sense because it's a long list that just takes up space in the main code body, and having it there makes it easier to accidentally modify it while working on the code. Putting it into a module keeps it safer from accidental changes.
+I made three modules. First, I put the original RAW_INSPECTIONS records into a module called original_records. This makes sense because it's a long list that just takes up space in the main code body, and having it there makes it easier to accidentally modify it while working on the code. Putting it into a module keeps it safer from accidental changes.
 
-I also put the ALL_REJECTS list (used for testing what audit_counts and clean_records do with a set of records where all are rejected) into its own module for the same reasons. Takes up a bunch of lines and it's easy to mess it up accidentally when working on the main code.
+I also put the ALL_REJECTS list (used for testing what audit_counts and clean_records do with a set of records where all are rejected) into its own module for the same reasons. This module is called reject_records. Takes up a bunch of lines and it's easy to mess it up accidentally when working on the main code.
 
 I also took the three helper functions for normalize_record (valid_hive_id, parse_date_ and convert_bool) and placed them into a module called normalize_helper_functions, which is abbreviated to nhf in the code. This makes sense because these are shorter functions that are called *within* the main normalize_record function but don't really need to be in the main code file. They take up extra space and can be relegated to a module with no ill effects. In my opinion, this also makes it easier to read through this section of code, since you don't have to look thru three helper functions before getting to normalize_record.
 
