@@ -898,7 +898,7 @@ assert all_mites == df['mites'].sum(), "Total mites not equal"
 # Adds column needs_attention for risk score greater than/equal to 3
 df["needs_attention"] = df["risk_score"] >= 3
 
-print("\nASSIGNMENT 7 OUTPUT:")
+print("\n==========ASSIGNMENT 7 OUTPUT:==========")
 # Displays dtypes per assignment instructions
 print("\nBelow are the dtypes of each column in the DataFrame:")
 print(df.dtypes)
@@ -970,7 +970,7 @@ def monthly_summary(frame: pd.DataFrame) -> pd.DataFrame:
             attention_rate=("needs_attention", "mean")
             # The mean of needs_attention indicates the % of records needing attention
         )
-    )
+    ) # As mentioned prior, gen ai used to learn about lambda
     monthly["attention_rate"] = (monthly["attention_rate"].map(lambda x: f"{x:.2%}"))
 
     return monthly
