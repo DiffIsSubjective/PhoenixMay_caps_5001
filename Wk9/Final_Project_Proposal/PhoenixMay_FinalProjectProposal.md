@@ -6,11 +6,9 @@ Drugs dataset taken from here: https://corgis-edu.github.io/corgis/csv/drugs/
 
 ## 2: Starting Hypothesis
 
-With all the data given, there are a lot of options, but I'm thinking about doing this one:
+Null hypothesis: For the populations of each age group and for the means of the rate of new marijuana users, all three population means are equal.
 
-Null hypothesis: For the drug usage dataset (containing substance abuse statistics across different US states/age groups/years), there will be **NO** difference between the mean yearly rate (per 1000 people & across all years/states) of new marijuana users for each age group.
-
-Alternate hypothesis: For the drug usage dataset (containing substance abuse statistics across different US states/age groups/years), there **WILL** be a difference between the mean yearly rate (per 1000 people & across all years/states) of new marijuana users for each age group.
+Alternate hypothesis: For the populations of each age group and for the means of the rate of new marijuana users, at least one population mean is different.
 
 ## 3: Models
 
